@@ -1,0 +1,23 @@
+{
+  "name": "portafolio-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.11.0",
+    "@emotion/react": "^11.13.0",
+    "@emotion/server": "^11.11.0",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^5.16.4",
+    "@mui/material": "^5.16.4",
+    "@mui/material-nextjs": "^5.16.1",
+    "next": "14.2.4",
+    "react": "^18",
+    "react-dom": "^18"
+  }
+}
