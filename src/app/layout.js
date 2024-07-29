@@ -18,10 +18,10 @@ export default function RootLayout({ children }) {
 
       <AppRouterCacheProvider>
 
-        <body className={`${inter.className} `}>{children}</body>
+        <body className={`${inter.className}`}> {children}</body>
 
       </AppRouterCacheProvider>
-    </html>
+    </html >
 
   );
 }
