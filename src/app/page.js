@@ -6,21 +6,33 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Proyects from './components/Proyects/Proyects';
 import Habilities from './components/Habilities/Habilities';
+import Avatar from '@mui/material/Avatar';
 
 export default function Home() {
   return (
     <React.Fragment>
       {/* TODO:  Change global css, implement material ui custom theme*/}
       {/* <CssBaseline /> */}
+      <Box sx={{
+        height: '30vh',
+        backgroundImage: "url('https://fastly.picsum.photos/id/866/1800/800.jpg?hmac=KOco2XSqZA9XrVsMjbC6L2Yg04WgIo7dN2E2vi2oRgc')",
+        backgroundRepeat: "no-repeat",
+      }}
+
+      ></Box>
       <Container maxWidth="lg" >
 
         <main >
 
 
-          <Box sx={{ height: '100vh' }} >
-            <h2>
-              Acerca de mi
-            </h2>
+          <Box sx={{ height: '80vh' }} >
+
+            <Avatar
+              alt="Remy Sharp"
+              src="https://randomuser.me/api/portraits/thumb/men/75.jpg"
+              sx={{ width: 100, height: 100 }}
+            />
+
             <p>Desarrollador web en constante aprendizaje</p>
             <p>
               Hola, Soy Pedro Lopez, desarrollador full stack apasiionado por crear aplicaciones web robustas y eficientes.
@@ -53,7 +65,7 @@ export default function Home() {
 
         </main>
       </Container>
-    </React.Fragment>
+    </React.Fragment >
 
   );
 }
