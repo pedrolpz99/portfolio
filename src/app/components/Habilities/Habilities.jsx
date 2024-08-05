@@ -14,6 +14,19 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const Habilities = () => {
+  const habilities = [
+    "JavaScript",
+    "Html",
+    "Css",
+    "Bootstrap",
+    "React js",
+    "Next Js",
+    "Rails",
+    "Ruby",
+    "Git",
+    "Bash",
+    "MySql",
+  ];
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid
@@ -21,9 +34,9 @@ const Habilities = () => {
         spacing={{ xs: 2, md: 3 }}
         columns={{ xs: 4, sm: 8, md: 12 }}
       >
-        {Array.from(Array(6)).map((_, index) => (
+        {habilities.map((hability, index) => (
           <Grid item xs={2} sm={4} md={4} key={index}>
-            <Item>xs=2</Item>
+            <Item>{hability}</Item>
           </Grid>
         ))}
       </Grid>

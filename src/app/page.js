@@ -51,7 +51,7 @@ export default function Home() {
           </Box>
 
           <h3>Educacion</h3>
-          <Box sx={{ height: '100vh' }}>
+          <Box >
             <h3>Proyectos</h3>
             <Proyects />
           </Box>
