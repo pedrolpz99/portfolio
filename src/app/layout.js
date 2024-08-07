@@ -1,6 +1,6 @@
 import { Nunito } from "next/font/google";
 import "./globals.css";
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
+
 
 const inter = Nunito({ subsets: ["latin"] });
 
@@ -15,12 +15,11 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="es" >
-
-      <AppRouterCacheProvider>
-
-        <body className={`${inter.className}`}> {children}</body>
-
-      </AppRouterCacheProvider>
+      <body className={`${inter.className}`}>
+        <div class="container mx-auto px-4">
+          {children}
+        </div>
+      </body>
     </html >
 
   );
