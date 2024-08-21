@@ -1,4 +1,7 @@
 import { Nunito } from "next/font/google";
+import Footer from './components/Footer/Footer';
+import Navigation from "./components/Navigation";
+
 import "./globals.css";
 
 
@@ -15,7 +18,11 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="es" >
-      <body className={`${inter.className}`}>{children}</body>
+      <body className={`${inter.className}`}>
+        <Navigation />
+        {children}
+        <Footer />
+      </body>
     </html >
 
   );
