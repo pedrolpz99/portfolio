@@ -4,7 +4,7 @@ import React from 'react';
 
 const Page = () => {
     return (
-        <div>
+        <div className=''>
             <h1>Hello, Next.js!</h1>
         </div>
     );
