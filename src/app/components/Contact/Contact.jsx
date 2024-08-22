@@ -72,7 +72,7 @@ const ContactForm = () => {
             <div className="mt-5">
               <a
                 href="mailto:example@example.com"
-                class="mt-5 rounded-md bg-black px-10 py-2 text-white"
+                className="mt-5 rounded-md bg-black px-10 py-2 text-white"
               >
                 Enviar Mensaje
               </a>

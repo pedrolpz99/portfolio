@@ -34,7 +34,7 @@ const Avatar = () => {
       <div className="mt-18 mb-20">
         <button
           href="mailto:example@example.com"
-          class="mt-5 rounded-md bg-[#76ABAE] px-10 py-2 text-white"
+          className="mt-5 rounded-md bg-[#76ABAE] px-10 py-2 text-white"
           onClick={() => {
             handleDownload();
           }}

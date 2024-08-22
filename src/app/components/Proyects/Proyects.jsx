@@ -24,26 +24,29 @@ export default function Proyects() {
           {projects.map((proyect, index) => {
             return (
               <>
-                <div key={index} class="flex  items-center justify-center mb-8">
-                  <div class="relative flex flex-col rounded-xl bg-[#EEEEEE]  bg-clip-border text-gray-700 shadow-md">
-                    <div class="relative m-0 w-full shrink-0 overflow-hidden rounded-xl   bg-[#EEEEEE]  bg-clip-border text-gray-700">
+                <div
+                  key={index}
+                  className="flex  items-center justify-center mb-8"
+                >
+                  <div className="relative flex flex-col rounded-xl bg-[#EEEEEE]  bg-clip-border text-gray-700 shadow-md">
+                    <div className="relative m-0 w-full shrink-0 overflow-hidden rounded-xl   bg-[#EEEEEE]  bg-clip-border text-gray-700">
                       <img
                         src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1471&amp;q=80"
                         alt="image"
-                        class="h-auto w-full object-cover"
+                        className="h-auto w-full object-cover"
                       />
                     </div>
-                    <div class="p-4">
-                      <h4 class="mb-2 block font-sans text-gray-700 font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                    <div className="p-4">
+                      <h4 className="mb-2 block font-sans text-gray-700 font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
                         {proyect.name}
                       </h4>
-                      <p class="mb-8 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
+                      <p className="mb-8 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
                         Like so many organizations these days, Autodesk is a
                         company in transition.
                       </p>
-                      <a class="inline-block" href="#">
+                      <a className="inline-block" href="#">
                         <button
-                          class=" flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white-500 transition-all hover:bg-black-500/10 active:bg-black-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                          className=" flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white-500 transition-all hover:bg-black-500/10 active:bg-black-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                           type="button"
                         >
                           Ver Proyecto
@@ -54,7 +57,7 @@ export default function Proyects() {
                             stroke-width="2"
                             stroke="currentColor"
                             aria-hidden="true"
-                            class="h-4 w-4"
+                            className="h-4 w-4"
                           >
                             <path
                               stroke-linecap="round"

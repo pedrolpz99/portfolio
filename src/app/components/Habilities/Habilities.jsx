@@ -2,32 +2,74 @@ import * as React from "react";
 
 const Habilities = () => {
   const habilities = [
-    "JavaScript",
-    "Html",
-    "Css",
-    "Tailwind",
-    "Bootstrap",
-    "React js",
-    "Next Js",
-    "Rails",
-    "Ruby",
-    "Git",
-    "Bash",
-    "MySql",
+    {
+      name: "Html",
+      icon: "devicon-html5-plain",
+    },
+    {
+      name: "Css",
+      icon: "devicon-css3-plain",
+    },
+    {
+      name: "JavaScript",
+      icon: "devicon-javascript-plain",
+    },
+    {
+      name: "Tailwind",
+      icon: "devicon-tailwindcss-original colored",
+    },
+    {
+      name: "Bootstrap",
+      icon: "devicon-bootstrap-plain",
+    },
+    {
+      name: "React js",
+      icon: "devicon-react-original",
+    },
+    {
+      name: "Next Js",
+      icon: "devicon-nextjs-original-wordmark",
+    },
+    {
+      name: "Rails",
+      icon: "devicon-rails-plain",
+    },
+    {
+      name: "Ruby",
+      icon: "devicon-ruby-plain",
+    },
+    {
+      name: "Git",
+      icon: "devicon-git-plain",
+    },
+    {
+      name: "Bash",
+      icon: "devicon-bash-plain",
+    },
+    {
+      name: "MySql",
+      icon: "devicon-mysql-plain-wordmark",
+    },
   ];
+
   return (
     <>
-      <div className="flex flex-col space-x-4 justify-center items-center mb-24">
-        <h3 className="p-7">Habilidades Tecnicas</h3>
-        <div className="flex flex-wrap	">
+      <div className="mt-28 mb-24">
+        <h3>Habilidades Tecnicas</h3>
+        <p>Algunos proyectos que he realizado.</p>
+
+        <div className="grid grid-cols-3 gap-4	">
           {habilities.map((habilitie, index) => {
             return (
-              <p
+              <div
                 key={index}
-                className="bg-[#76ABAE] text-white p-3 mx-4 my-1 rounded-full text-center"
+                className="bg-[#76ABAE] text-white rounded-lg text-center p-3  my-1 "
               >
-                {habilitie}
-              </p>
+                <span>
+                  <i className={`${habilitie.icon} text-6xl`}></i>
+                </span>
+                <p className="text-white">{habilitie.name}</p>
+              </div>
             );
           })}
         </div>

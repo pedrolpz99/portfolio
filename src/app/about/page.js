@@ -1,11 +1,12 @@
 
 
 import React from 'react';
+import Habilities from '../components/Habilities/Habilities';
 
 const Page = () => {
     return (
-        <div className=''>
-            <h1>Hello, Next.js!</h1>
+        <div className="min-h-screen flex flex-col px-5 ">
+            <Habilities />
         </div>
     );
 }
