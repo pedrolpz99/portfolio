@@ -50,13 +50,20 @@ const Habilities = () => {
       name: "MySql",
       icon: "devicon-mysql-plain-wordmark",
     },
+    {
+      name: "AWS",
+      icon: "devicon-amazonwebservices-plain-wordmark",
+    },
   ];
 
   return (
     <>
-      <div className="mt-28 mb-24">
+      <div className="mt-10 	 mb-24">
         <h3>Habilidades Tecnicas</h3>
-        <p>Algunos proyectos que he realizado.</p>
+        <p className="mb-5">
+          Conjunto de Tecnologias en las cuales he estado trabajando durante
+          todo mi aprendizaje.
+        </p>
 
         <div className="grid grid-cols-3 gap-4	">
           {habilities.map((habilitie, index) => {

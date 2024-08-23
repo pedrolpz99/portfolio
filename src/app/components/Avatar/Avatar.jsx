@@ -11,7 +11,7 @@ const Avatar = () => {
   };
   return (
     <>
-      <div className="flex mt-28  flex-col gap-10">
+      <div className="flex mt-12  flex-col gap-10">
         <div>
           <img
             className="inline-block w-20 rounded-full ring-2 ring-white"

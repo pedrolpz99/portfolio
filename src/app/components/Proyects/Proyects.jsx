@@ -19,7 +19,7 @@ export default function Proyects() {
         <p>Algunos proyectos que he realizado.</p>
       </div>
 
-      <div className="mb-24">
+      <div className="mb-24 w-[23rem]">
         <div className="flex flex-wrap ">
           {projects.map((proyect, index) => {
             return (

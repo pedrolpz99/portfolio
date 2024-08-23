@@ -3,9 +3,9 @@ import React from "react";
 const ContactForm = () => {
   return (
     <>
-      <h3 className="">Contacto</h3>
       <div className="mb-24">
-        <div className="mx-auto w-full max-w-lg">
+        <h3 className="">Contacto</h3>
+        <div className=" w-full max-w-lg">
           <div className="w-full mt-5">
             <div className="relative">
               <label htmlFor="npm-install-copy-button" className="sr-only">
@@ -71,7 +71,7 @@ const ContactForm = () => {
 
             <div className="mt-5">
               <a
-                href="mailto:example@example.com"
+                href="mailto:pedro_lpz99@outlook.com"
                 className="mt-5 rounded-md bg-black px-10 py-2 text-white"
               >
                 Enviar Mensaje

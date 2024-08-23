@@ -25,8 +25,12 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={`${inter.className}`}>
-        <Navigation />
-        {children}
+        <header>
+          <Navigation />
+        </header>
+        <div className="px-6 md:px-6 pt-16 pb-24 md:pt-20 max-w-[700px] mx-auto w-full ">
+          {children}
+        </div>
         <Footer />
       </body>
     </html >

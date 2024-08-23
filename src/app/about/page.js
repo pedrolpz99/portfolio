@@ -1,11 +1,13 @@
 
 
 import React from 'react';
-import Habilities from '../components/Habilities/Habilities';
+import Habilities from '../components/About/Habilities';
+import About from '../components/About/About'
 
 const Page = () => {
     return (
-        <div className="min-h-screen flex flex-col px-5 ">
+        <div >
+            <About />
             <Habilities />
         </div>
     );

@@ -9,11 +9,10 @@ export default function Home() {
   return (
 
     <main >
-      <div className="min-h-screen flex flex-col px-5 ">
-        <Avatar />
-        <Proyects />
-        <Contact />
-      </div>
+      <Avatar />
+      <Proyects />
+      <Contact />
+
     </main >
 
   );
