@@ -2,7 +2,7 @@
 import * as React from 'react';
 
 
-import Proyects from './components/Proyects/Proyects';
+import Project from './components/Projects/Project';
 import Contact from "./components/Contact/Contact"
 import Avatar from "./components/Avatar/Avatar"
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
 
     <main >
       <Avatar />
-      <Proyects />
+      <Project />
       <Contact />
 
     </main >

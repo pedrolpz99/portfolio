@@ -16,7 +16,7 @@ const Navigation = () => {
     },
     {
       id: 3,
-      link: "proyects",
+      link: "projects",
       name: "Proyectos",
     },
   ];

@@ -16,7 +16,7 @@ const Habilities = () => {
     },
     {
       name: "Tailwind",
-      icon: "devicon-tailwindcss-original colored",
+      icon: "devicon-tailwindcss-plain-wordmark",
     },
     {
       name: "Bootstrap",
