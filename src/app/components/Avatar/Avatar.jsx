@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { FiDownload } from "react-icons/fi";
 
 const Avatar = () => {
   const handleDownload = () => {
@@ -39,7 +40,10 @@ const Avatar = () => {
             handleDownload();
           }}
         >
-          Descargar CV
+          <div className="flex gap-2 aling-center">
+            <span>Descargar CV</span>
+            <FiDownload />
+          </div>
         </button>
       </div>
     </>

@@ -1,5 +1,6 @@
 "use client";
 import * as React from "react";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function Projects() {
   const projects = [
@@ -57,48 +58,34 @@ export default function Projects() {
               <>
                 <div
                   key={index}
-                  class="flex mb-10  items-center justify-center"
+                  className="flex mb-10  items-center justify-center"
                 >
-                  <div class="relative flex w-full flex-col md:flex-row rounded-xl  bg-clip-border  shadow-md">
-                    <div class="relative m-0 md:w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none  bg-clip-border ">
+                  <div className="relative flex w-full flex-col md:flex-row rounded-xl  bg-clip-border  shadow-md">
+                    <div className="relative m-0 md:w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none  bg-clip-border ">
                       <img
                         src={project.coverImage}
                         alt="image"
-                        class="h-full w-full object-cover"
+                        className="h-full w-full object-cover"
                       />
                     </div>
-                    <div class="p-6">
-                      <h4 class="mb-2 block font-sans  font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                    <div className="p-6">
+                      <h4 className="mb-2 block font-sans  font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
                         {project.name}
                       </h4>
-                      <p class="mb-8 block font-sans text-base font-normal leading-relaxed  antialiased">
+                      <p className="mb-8 block font-sans text-base font-normal leading-relaxed  antialiased">
                         {project.description}
                       </p>
                       <a
-                        class="inline-block"
+                        className="inline-block"
                         target="_blank"
                         href={project.link}
                       >
                         <button
-                          class="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-[#76ABAE] transition-all hover:bg-teal-500/10 active:bg-teal-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                          className="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-[#76ABAE] transition-all hover:bg-teal-500/10 active:bg-teal-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                           type="button"
                         >
                           Ver proyecto
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke-width="2"
-                            stroke="currentColor"
-                            aria-hidden="true"
-                            class="h-4 w-4"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                            ></path>
-                          </svg>
+                          <FaArrowRightLong />
                         </button>
                       </a>
                     </div>

@@ -1,4 +1,5 @@
 import * as React from "react";
+import { SiTailwindcss } from "react-icons/si";
 
 const Habilities = () => {
   const habilities = [
@@ -61,7 +62,7 @@ const Habilities = () => {
       <div className="mt-10 	 mb-24">
         <h3>Habilidades Tecnicas</h3>
         <p className="mb-5">
-          Conjunto de Tecnologias en las cuales he estado trabajando durante
+          Conjunto de Tecnologías en las cuales he estado trabajando durante
           todo mi aprendizaje.
         </p>
 
@@ -73,7 +74,15 @@ const Habilities = () => {
                 className="bg-[#76ABAE] text-white rounded-lg text-center p-3  my-1 "
               >
                 <span>
-                  <i className={`${habilitie.icon} text-6xl`}></i>
+                  <i className={`${habilitie.icon} text-6xl`}>
+                    {index == 3 ? (
+                      <>
+                        <div className="flex justify-center">
+                          <SiTailwindcss />
+                        </div>
+                      </>
+                    ) : null}
+                  </i>
                 </span>
                 <p className="text-white">{habilitie.name}</p>
               </div>
