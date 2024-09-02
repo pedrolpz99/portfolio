@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 const About = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const images = ["/media/1.jpeg", "/media/2.png", "/media/3.png"];
+  const images = ["/media/img1.jpg", "/media/img2.png"];
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
@@ -33,7 +33,7 @@ const About = () => {
                     key={index}
                     src={image}
                     alt={`Slide ${index + 1}`}
-                    className="inline-block w-full"
+                    className="inline-block w-full h-[20rem] object-cover"
                   />
                 );
               })}
