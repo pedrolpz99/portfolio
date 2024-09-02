@@ -1,8 +1,8 @@
 
 
 import React from 'react';
-import Habilities from '../components/About/Habilities';
-import About from '../components/About/About'
+import Habilities from '../components/about/Habilities.jsx';
+import About from '../components/about/About.jsx'
 
 const Page = () => {
     return (
