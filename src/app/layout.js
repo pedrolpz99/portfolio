@@ -1,6 +1,6 @@
 import { Nunito } from "next/font/google";
-import Footer from './components/footer/Footer.jsx';
-import Navigation from "./components/navigation/Index.jsx";
+import Footer from './components/footer/footer.jsx';
+import Navigation from "./components/navigation/index.jsx";
 
 import "./globals.css";
 
