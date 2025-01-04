@@ -5,6 +5,13 @@ import { FaArrowRightLong } from "react-icons/fa6";
 export default function Projects() {
   const projects = [
     {
+      name: "My Baul",
+      link: "",
+      coverImage: "/media/7.png",
+      description:
+        "PWA que crea notas con autenticación por JWT, refresh token y restablecimiento de contraseña",
+    },
+    {
       name: "App de Clima",
       link: "https://appdeclimabyplz.netlify.app/",
       coverImage: "/media/1.jpeg",

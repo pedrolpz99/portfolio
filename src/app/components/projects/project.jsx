@@ -23,23 +23,20 @@ const Project = () => {
             <div className="relative flex flex-col rounded-xl bg-[#EEEEEE]  bg-clip-border text-gray-700 shadow-md">
               <div className="relative m-0 w-full shrink-0 overflow-hidden rounded-xl   bg-[#EEEEEE]  bg-clip-border text-gray-700">
                 <img
-                  src="media/3.png"
+                  src="media/7.png"
                   alt="image"
                   className="h-auto w-full object-cover"
                 />
               </div>
               <div className="p-4">
                 <h4 className="mb-2 block font-sans text-gray-700 font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                  Blog de Cafe
+                  My Baul
                 </h4>
                 <p className="mb-8 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
-                  Blog simple para mostrar los beneficios del cafe.
+                  PWA que crea notas con autenticación por JWT, refresh token y
+                  restablecimiento de contraseña{" "}
                 </p>
-                <a
-                  className="inline-block"
-                  href="https://myblogdecafeparati.netlify.app/"
-                  target="_blank"
-                >
+                <a className="inline-block" href="" target="_blank">
                   <button
                     className="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-[#76ABAE] transition-all hover:bg-teal-500/10 active:bg-teal-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                     type="button"
