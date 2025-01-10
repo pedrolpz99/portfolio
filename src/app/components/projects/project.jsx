@@ -36,7 +36,11 @@ const Project = () => {
                   PWA que crea notas con autenticación por JWT, refresh token y
                   restablecimiento de contraseña{" "}
                 </p>
-                <a className="inline-block" href="" target="_blank">
+                <a
+                  className="inline-block"
+                  href="https://notes-frontend-five-smoky.vercel.app/"
+                  target="_blank"
+                >
                   <button
                     className="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-[#76ABAE] transition-all hover:bg-teal-500/10 active:bg-teal-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                     type="button"
@@ -47,10 +51,6 @@ const Project = () => {
                 </a>
               </div>
             </div>
-            <link
-              rel="stylesheet"
-              href="https://notes-frontend-five-smoky.vercel.app/"
-            />
           </div>
         </div>
       </div>
