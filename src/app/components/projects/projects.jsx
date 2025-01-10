@@ -6,7 +6,7 @@ export default function Projects() {
   const projects = [
     {
       name: "My Baul",
-      link: "https://notes-frontend-2n37.vercel.app/",
+      link: "https://notes-frontend-five-smoky.vercel.app/",
       coverImage: "/media/7.png",
       description:
         "PWA que crea notas con autenticación por JWT, refresh token y restablecimiento de contraseña",

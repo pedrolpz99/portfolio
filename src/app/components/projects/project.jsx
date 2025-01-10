@@ -49,7 +49,7 @@ const Project = () => {
             </div>
             <link
               rel="stylesheet"
-              href="https://notes-frontend-2n37.vercel.app/"
+              href="https://notes-frontend-five-smoky.vercel.app/"
             />
           </div>
         </div>
