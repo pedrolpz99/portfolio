@@ -49,7 +49,7 @@ const Project = () => {
             </div>
             <link
               rel="stylesheet"
-              href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"
+              href="https://notes-frontend-2n37.vercel.app/"
             />
           </div>
         </div>
