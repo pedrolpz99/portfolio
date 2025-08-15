@@ -16,7 +16,7 @@ const ContactForm = () => {
   return (
     <>
       <div className="mb-24">
-        <h3 className="">Contacto</h3>
+        <h3 className="">Contact</h3>
         <div className=" w-full max-w-lg">
           <div className="w-full mt-5">
             <div className="relative">
@@ -40,7 +40,7 @@ const ContactForm = () => {
                   isCopied ? "visible opacity-100" : "invisible opacity-0"
                 }`}
               >
-                <span>Copiado!</span>
+                <span>Copied!</span>
               </div>
             </div>
 
@@ -49,7 +49,7 @@ const ContactForm = () => {
                 href="mailto:pedro_lpz99@outlook.com"
                 className="mt-5 rounded-md bg-black px-10 py-2 text-white"
               >
-                Enviar Mensaje
+                Send Message
               </a>
             </div>
           </div>

@@ -17,8 +17,8 @@ const About = () => {
     );
   };
   return (
-    <div className="mt-10 mb-24">
-      <h3>Acerca de mi</h3>
+    <div className="mt-20 md:mt-0 mb-24">
+      <h1 className="text-3xl font-medium">About </h1>
       <div className="my-8">
         <div className="relative w-full  max-w-xl mx-auto">
           <div className="overflow-hidden">
@@ -54,21 +54,23 @@ const About = () => {
           </button>
         </div>
       </div>
-      <p className="mb-5">
-        Hola, Soy Pedro López y me apasiona la idea de crear aplicaciones,
-        sistemas, páginas web para que sean útiles hacia personas que la usen.
-      </p>
-      <p className="mb-5">
-        He trabajado en diferentes sectores relacionados con la informática como
-        Soporte de aplicaciones, consultor de bases de datos o Desarrollador
-        Web. Siempre estoy en constante aprendizaje, aprendiendo de mis errores
-        y mejorando en cada momento que puedo dentro de mi persona como en el
-        ámbito laboral.
-      </p>
-      <p className="mb-5">
-        Cuando no estoy codeando me gusta tocar la guitarra eléctrica, mejorar
-        mi inglés y explorar nuevas tecnologías y mejorando como programador.
-      </p>
+      <div>
+        <p className="mb-5">
+          Hola, Soy Pedro López y me apasiona la idea de crear aplicaciones,
+          sistemas, páginas web para que sean útiles hacia personas que la usen.
+        </p>
+        <p className="mb-5">
+          He trabajado en diferentes sectores relacionados con la informática
+          como Soporte de aplicaciones, consultor de bases de datos o
+          Desarrollador Web. Siempre estoy en constante aprendizaje, aprendiendo
+          de mis errores y mejorando en cada momento que puedo dentro de mi
+          persona como en el ámbito laboral.
+        </p>
+        <p className="mb-5">
+          Cuando no estoy codeando me gusta tocar la guitarra eléctrica, mejorar
+          mi inglés y explorar nuevas tecnologías y mejorando como programador.
+        </p>
+      </div>
     </div>
   );
 };

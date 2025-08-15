@@ -32,6 +32,10 @@ const Habilities = () => {
       icon: "devicon-nextjs-original-wordmark",
     },
     {
+      name: "Typescript",
+      icon: "devicon-typescript-plain",
+    },
+    {
       name: "Rails",
       icon: "devicon-rails-plain",
     },
@@ -39,6 +43,11 @@ const Habilities = () => {
       name: "Ruby",
       icon: "devicon-ruby-plain",
     },
+    { name: "Nginx", icon: "devicon-nginx-original" },
+    { name: "Python", icon: "devicon-python-plain" },
+    { name: "Graphql", icon: "devicon-graphql-plain" },
+    { name: "C#", icon: "devicon-csharp-plain" },
+    { name: "ASP .NET", icon: "devicon-dotnetcore-plain" },
     {
       name: "Git",
       icon: "devicon-git-plain",
@@ -55,39 +64,40 @@ const Habilities = () => {
       name: "AWS",
       icon: "devicon-amazonwebservices-plain-wordmark",
     },
+    { name: "Linux", icon: "devicon-linux-plain" },
+    {
+      name: "Ubuntu",
+      icon: "devicon-ubuntu-plain",
+    },
   ];
 
   return (
     <>
       <div className="mt-10 	 mb-24">
-        <h3>Habilidades Tecnicas</h3>
+        <h3>Technical Skills</h3>
         <p className="mb-5">
-          Conjunto de Tecnologías en las cuales he estado trabajando durante
-          todo mi aprendizaje.
+          Set of technologies I have been working with throughout my learning
+          journey.
         </p>
 
-        <div className="grid grid-cols-3 gap-4	">
-          {habilities.map((habilitie, index) => {
-            return (
-              <div
-                key={index}
-                className="bg-[#76ABAE] text-white rounded-lg text-center p-3  my-1 "
-              >
-                <span>
-                  <i className={`${habilitie.icon} text-6xl`}>
-                    {index == 3 ? (
-                      <>
-                        <div className="flex justify-center">
-                          <SiTailwindcss />
-                        </div>
-                      </>
-                    ) : null}
-                  </i>
-                </span>
-                <p className="text-white">{habilitie.name}</p>
+        <div className="grid grid-cols-3 gap-4">
+          {habilities.map((habilitie, index) => (
+            <div
+              key={index}
+              className="bg-[#76ABAE] text-white rounded-xl p-5 flex flex-col items-center justify-center gap-3
+                 transition-all duration-300 ease-in-out
+                 hover:scale-105 hover:shadow-lg"
+            >
+              <div className="text-6xl flex justify-center">
+                {index === 3 ? (
+                  <SiTailwindcss />
+                ) : (
+                  <i className={habilitie.icon}></i>
+                )}
               </div>
-            );
-          })}
+              <p className="text-white">{habilitie.name}</p>
+            </div>
+          ))}
         </div>
       </div>
     </>

@@ -53,9 +53,12 @@ export default function Projects() {
 
   return (
     <>
-      <div className=" mt-10 mb-5">
-        <h3>Proyectos</h3>
-        <p>Algunos proyectos Front-End que he realizado.</p>
+      <div className=" mt-20 md:mt-0 mb-5">
+        <h1 className="text-3xl font-medium">Projects</h1>
+        <p>
+          This are my personal projects i've created with diferents
+          technologies.
+        </p>
       </div>
 
       <div className="mt- w-full">
@@ -63,41 +66,28 @@ export default function Projects() {
           {projects.map((project, index) => {
             return (
               <>
-                <div
+                <a
                   key={index}
-                  className="flex mb-10  items-center justify-center"
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center w-full mb-3 max-w-md rounded-lg bg-[#1A1A1A] p-4
+    transition-all duration-300 ease-in-out 
+    hover:bg-[#242424] hover:scale-[1.02]"
                 >
-                  <div className="relative flex w-full flex-col md:flex-row rounded-xl  bg-clip-border  shadow-md">
-                    <div className="relative m-0 md:w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none  bg-clip-border ">
-                      <img
-                        src={project.coverImage}
-                        alt="image"
-                        className="h-full w-full object-cover"
-                      />
-                    </div>
-                    <div className="p-6">
-                      <h4 className="mb-2 block font-sans  font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                        {project.name}
-                      </h4>
-                      <p className="mb-8 block font-sans text-base font-normal leading-relaxed  antialiased">
-                        {project.description}
-                      </p>
-                      <a
-                        className="inline-block"
-                        target="_blank"
-                        href={project.link}
-                      >
-                        <button
-                          className="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-[#76ABAE] transition-all hover:bg-teal-500/10 active:bg-teal-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                          type="button"
-                        >
-                          Ver proyecto
-                          <FaArrowRightLong />
-                        </button>
-                      </a>
-                    </div>
+                  <img
+                    src={project.coverImage}
+                    alt="image"
+                    className="w-16 h-16 rounded-md object-cover"
+                  />
+
+                  <div className="ml-4">
+                    <h4 className="text-white font-semibold">{project.name}</h4>
+                    <p className="text-gray-400 text-sm">
+                      {project.description}
+                    </p>
                   </div>
-                </div>
+                </a>
               </>
             );
           })}

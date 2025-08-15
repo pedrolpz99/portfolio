@@ -7,51 +7,44 @@ const Project = () => {
   return (
     <>
       <div className="mb-5">
-        <Link href="/projects">
-          <div className="text-white flex aling-center gap-1 hover:underline">
-            <h3>Proyectos </h3>
-            <FaLink className="w-3" />
-          </div>
-        </Link>
-
-        <p>Algunos proyectos que he realizado.</p>
+        <h3>Projects</h3>
+        <p>Some personal projects i've created.</p>
       </div>
 
       <div className="mb-24 w-[23rem]">
-        <div className="flex flex-wrap ">
-          <div className="flex  items-center justify-center mb-8">
-            <div className="relative flex flex-col rounded-xl bg-[#EEEEEE]  bg-clip-border text-gray-700 shadow-md">
-              <div className="relative m-0 w-full shrink-0 overflow-hidden rounded-xl   bg-[#EEEEEE]  bg-clip-border text-gray-700">
-                <img
-                  src="media/7.png"
-                  alt="image"
-                  className="h-auto w-full object-cover"
-                />
-              </div>
-              <div className="p-4">
-                <h4 className="mb-2 block font-sans text-gray-700 font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                  My Baul
-                </h4>
-                <p className="mb-8 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
-                  PWA que crea notas con autenticación por JWT, refresh token y
-                  restablecimiento de contraseña{" "}
-                </p>
-                <a
-                  className="inline-block"
-                  href="https://notes-frontend-five-smoky.vercel.app/"
-                  target="_blank"
-                >
-                  <button
-                    className="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-[#76ABAE] transition-all hover:bg-teal-500/10 active:bg-teal-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                    type="button"
-                  >
-                    ver proyecto
-                    <FaArrowRightLong />
-                  </button>
-                </a>
-              </div>
-            </div>
+        <a
+          href="https://notes-frontend-five-smoky.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center w-full mb-3 max-w-md rounded-lg bg-[#1A1A1A] p-4
+    transition-all duration-300 ease-in-out 
+    hover:bg-[#242424] hover:scale-[1.02]"
+        >
+          <img
+            src="media/7.png"
+            alt="image"
+            className="w-16 h-16 rounded-md object-cover"
+          />
+
+          <div className="ml-4">
+            <h4 className="text-white font-semibold">My Vaul</h4>
+            <p className="text-gray-400 text-sm">
+              Page web aplication with auth by JWT, refresh token and resets
+              passwords
+            </p>
           </div>
+        </a>
+
+        <div>
+          <Link
+            href="/projects"
+            type="button"
+            className="group flex w-[8rem] select-none items-center gap-2   rounded-lg py-3 px-6 text-center align-middle  text-xs   text-[#76ABAE] transition-all hover:bg-teal-500/10 active:bg-teal-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+          >
+            <span>View all</span>
+
+            <FaArrowRightLong className="w-3 h-3 transition-transform duration-200 group-hover:translate-x-1" />
+          </Link>
         </div>
       </div>
     </>

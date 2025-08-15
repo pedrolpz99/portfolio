@@ -5,7 +5,7 @@ import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center  w-full p-8 mt-4 bg-[#141414] text-white">
+    <footer className="footer footer-center  w-full p-8 mt-4  text-white">
       <div className="text-center">
         <div className="flex gap-2.5 items-center justify-around mb-4">
           <a
@@ -33,7 +33,7 @@ const Footer = () => {
         <p>
           Copyright © 2024 -
           <a className="font-semibold" href="mailto:m.sohanemon@gmail.com">
-            Pedro Lopez
+            Pedro López
           </a>
         </p>
       </div>
