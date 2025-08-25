@@ -6,7 +6,7 @@ const About = () => {
   const images = ["/media/img1.jpg", "/media/img2.png"];
 
   const prevSlide = () => {
-    setCurrentIndex((prevInnpmdex) =>
+    setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
