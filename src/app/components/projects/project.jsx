@@ -11,7 +11,7 @@ const Project = () => {
         <p>Some personal projects i've created.</p>
       </div>
 
-      <div className="mb-24 w-[23rem]">
+      <div className="mb-24 ">
         <a
           href="https://notes-frontend-five-smoky.vercel.app/"
           target="_blank"

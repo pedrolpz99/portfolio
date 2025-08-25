@@ -1,10 +1,8 @@
 import { Nunito, Ultra } from "next/font/google";
 import Footer from './components/footer/footer.jsx';
 import Navigation from "./components/navigation/index.jsx";
-import Link from "next/link";
-import { BiHomeAlt2 } from 'react-icons/bi';
-import { FaUser } from 'react-icons/fa6';
-import { PiAppWindowBold } from 'react-icons/pi';
+import Sidebar from './components/sidebar/sidebar.jsx'
+
 import "./globals.css";
 
 
@@ -18,26 +16,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
 
 
-  const links = [
-    {
-      id: 1,
-      link: "/",
-      name: "Home",
-      icon: BiHomeAlt2,
-    },
-    {
-      id: 2,
-      link: "about",
-      name: "About",
-      icon: FaUser,
-    },
-    {
-      id: 3,
-      link: "projects",
-      name: "Projects",
-      icon: PiAppWindowBold,
-    },
-  ];
 
   return (
     <html lang="es" >
@@ -52,39 +30,7 @@ export default function RootLayout({ children }) {
           <Navigation />
         </header>
         <div className="mx-auto flex min-h-screen w-full max-w-4xl gap-12 px-8 ">
-          {/* Sidebar */}
-          <aside className="sticky top-0 hidden h-screen w-[170px] py-20 md:block">
-
-            <nav className="flex h-full w-full flex-col gap-12 overflow-visible">
-              <div className="flex w-full flex-col p-3 items-start gap-4 text-left">
-                <img
-                  className=" w-16 h-16 object-cover rounded-full"
-                  src="/media/profile.jpg"
-                  alt=""
-                />
-                <div>
-                  <span className="text-lg text-gray-300 font-medium">Pedro A. Lopez Garcia</span>
-                  <p className="whitespace-nowrap">
-                    Software Developer
-                  </p>
-                </div>
-              </div>
-              <ul className="flex list-none flex-col gap-2">
-                {links.map(({ id, link, name, icon: Icon }) => (
-                  <Link
-                    key={id}
-                    href={link}
-                    className="flex items-center gap-3 px-4 py-2 rounded-lg transition-colors text-gray-300 hover:bg-[#2A2A2A] hover:text-white">
-                    <Icon size="20" />
-                    <span>{name}</span>
-                  </Link>
-                ))}
-              </ul>
-
-
-            </nav>
-          </aside>
-
+          <Sidebar />
           <div className="flex h-min w-full flex-col gap-16 overflow-visible py-8 md:gap-24 md:py-20">
             {/* Main content */}
             <main className="flex flex-col gap-16 md:gap-24">
