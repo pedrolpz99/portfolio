@@ -1,16 +1,17 @@
+import Habilities from "../components/about/habilities.jsx";
+import About from "../components/about/about.jsx";
 
-
-import React from 'react';
-import Habilities from '../components/about/habilities.jsx';
-import About from '../components/about/about.jsx'
+export const metadata = {
+  title: "About | Pedro López",
+};
 
 const Page = () => {
-    return (
-        <div >
-            <About />
-            <Habilities />
-        </div>
-    );
-}
+  return (
+    <div>
+      <About />
+      <Habilities />
+    </div>
+  );
+};
 
 export default Page;

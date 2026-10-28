@@ -1,4 +1,3 @@
-import * as React from "react";
 import { SiTailwindcss } from "react-icons/si";
 
 const Habilities = () => {
@@ -17,7 +16,7 @@ const Habilities = () => {
     },
     {
       name: "Tailwind",
-      icon: "devicon-tailwindcss-plain-wordmark",
+      Icon: SiTailwindcss,
     },
     {
       name: "Bootstrap",
@@ -73,29 +72,25 @@ const Habilities = () => {
 
   return (
     <>
-      <div className="mt-10 	 mb-24">
+      <div className="mt-10 mb-24">
         <h3>Technical Skills</h3>
         <p className="mb-5">
           Set of technologies I have been working with throughout my learning
           journey.
         </p>
 
-        <div className="grid grid-cols-3 gap-4">
-          {habilities.map((habilitie, index) => (
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+          {habilities.map(({ name, icon, Icon }) => (
             <div
-              key={index}
+              key={name}
               className="bg-[#76ABAE] text-white rounded-xl p-5 flex flex-col items-center justify-center gap-3
                  transition-all duration-300 ease-in-out
                  hover:scale-105 hover:shadow-lg"
             >
               <div className="text-6xl flex justify-center">
-                {index === 3 ? (
-                  <SiTailwindcss />
-                ) : (
-                  <i className={habilitie.icon}></i>
-                )}
+                {Icon ? <Icon /> : <i className={icon}></i>}
               </div>
-              <p className="text-white">{habilitie.name}</p>
+              <p className="text-white">{name}</p>
             </div>
           ))}
         </div>

@@ -1,12 +1,15 @@
-import React from 'react';
-import Projects from '../components/projects/projects.jsx'
+import Projects from "../components/projects/projects.jsx";
+
+export const metadata = {
+  title: "Projects | Pedro López",
+};
 
 const Page = () => {
-    return (
-        <div >
-            <Projects />
-        </div>
-    );
-}
+  return (
+    <div>
+      <Projects />
+    </div>
+  );
+};
 
 export default Page;

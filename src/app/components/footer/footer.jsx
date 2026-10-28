@@ -1,7 +1,6 @@
 import React from "react";
 import { FaLinkedin } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { FaGithub, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -12,6 +11,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/pedro-andrés-lópez-garcía-8752321a0"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn"
           >
             <FaLinkedin className="h-5 w-5 text-emerald-500" />
           </a>
@@ -19,6 +19,7 @@ const Footer = () => {
             href="https://github.com/pedrolpz99"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="GitHub"
           >
             <FaGithub className="h-5 w-5 text-emerald-500" />
           </a>
@@ -26,13 +27,14 @@ const Footer = () => {
             href="https://www.instagram.com/pedro_lpz99s/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Instagram"
           >
             <FaInstagram className="h-5 w-5 text-emerald-500" />
           </a>
         </div>
         <p>
-          Copyright © 2024 -
-          <a className="font-semibold" href="mailto:m.sohanemon@gmail.com">
+          Copyright © {new Date().getFullYear()} -{" "}
+          <a className="font-semibold" href="mailto:pedro_lpz99@outlook.com">
             Pedro López
           </a>
         </p>

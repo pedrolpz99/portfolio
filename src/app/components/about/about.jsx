@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
+import Image from "next/image";
 
 const About = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -26,29 +27,32 @@ const About = () => {
               className="whitespace-nowrap transition-transform duration-300"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
-              {images.map((image, index) => {
-                console.log(image);
-                return (
-                  <img
-                    key={index}
-                    src={image}
-                    alt={`Slide ${index + 1}`}
-                    className="inline-block w-full h-[20rem] object-cover"
-                  />
-                );
-              })}
+              {images.map((image, index) => (
+                <Image
+                  key={image}
+                  src={image}
+                  alt={`Slide ${index + 1}`}
+                  width={1200}
+                  height={640}
+                  sizes="(max-width: 640px) 100vw, 576px"
+                  priority={index === 0}
+                  className="inline-block w-full h-[20rem] object-cover"
+                />
+              ))}
             </div>
           </div>
 
           <button
             className="absolute top-1/2 left-0 h-full transform -translate-y-1/2 bg-transparent text-white px-[2rem] focus:outline-none hover:bg-opacity-50 hover:bg-gray-800 transition duration-300"
             onClick={prevSlide}
+            aria-label="Previous slide"
           >
             &#10094;
           </button>
           <button
             className="absolute top-1/2 right-0 h-full transform -translate-y-1/2 bg-transparent text-white  px-[2rem] focus:outline-none hover:bg-opacity-50 hover:bg-gray-800 transition duration-300"
-            onClick={prevSlide}
+            onClick={nextSlide}
+            aria-label="Next slide"
           >
             &#10095;
           </button>
